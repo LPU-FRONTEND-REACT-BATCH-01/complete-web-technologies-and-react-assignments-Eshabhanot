@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+
+<h1>Ticket Booking</h1>
+
+<form action="" method="post">
+
+    
+    <label>First Name:</label><br>
+    <input type="text" name="firstName" placeholder="First Name" required><br><br>
+
+    <label>Last Name:</label><br>
+    <input type="text" name="lastName" placeholder="Last Name" required><br><br>
+
+    
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male" required> Male
+    <input type="radio" name="gender" value="female"> Female
+    <br><br>
+
+    
+    <label>Email:</label><br>
+    <input type="email" name="email" placeholder="example@gmail.com" required>
+    <br><br>
+
+   
+    <label>Room Type:</label><br>
+    <select name="room" required>
+        <option value="">-- Select Room --</option>
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="xl">XL</option>
+    </select>
+    <br><br>
+
+    
+    <label>Number of Guests:</label><br>
+    <input type="number" name="guests" min="1" max="10" required>
+    <br><br>
+
+    
+    <label>Arrival Date & Time:</label><br>
+    <input type="datetime-local" name="arrival" required>
+    <br><br>
+
+    
+    <label>Departure Date:</label><br>
+    <input type="date" name="departure" required>
+    <br><br>
+
+    
+    <label>City:</label><br>
+    <select name="city">
+        <option value="">-- Select City --</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Bangalore</option>
+        <option>Chandigarh</option>
+    </select>
+    <br><br>
+
+<!-- Terms -->
+    <input type="checkbox" name="terms" required> I agree to terms & conditions
+    <br><br>
+
+    
+    <label>Special Requests:</label><br>
+    <textarea name="requests" rows="3" placeholder="Any special needs..."></textarea>
+    <br><br>
+
+    
+    <input type="submit" value="Book Now">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>

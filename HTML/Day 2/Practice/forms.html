@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1>Login Form</h1>
+
+    <form action="" method="">
+
+     
+        <label for="name">Username:</label>
+        <input type="text" id="name" name="username" placeholder="Enter your name"  autocomplete="on" required>
+        <br><br>
+
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+       
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+      
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+      
+        <label>Skills:</label>
+        <input type="checkbox" id="react" name="skills" value="React">
+        <label for="react">React</label>
+
+        <input type="checkbox" id="java" name="skills" value="Java">
+        <label for="java">Java</label>
+        <br><br>
+   
+         <input name="interest" type="text" value="5%" readonly>
+         <input name="interest" type="text" value="10%" disabled><br><br>
+
+        <label>City:</label>
+        <select name="City" id="">
+            <optgroup label="Punjab">
+                <option value="">Jalandhar</option>
+                 <option value="">Pathankot</option>
+            </optgroup>
+
+            <optgroup label="Karanataka">
+                <option value="">bangalore</option>
+                 <option value="">hyderbad</option>
+            </optgroup>
+        </select><br><br>
+
+        
+
+        <input type="file"><br><br>
+        <input type="datetime-local"><br><br>
+        <input min="0" max="100" type="range" step="10"><br><br>
+        <input type="color"><br><br>
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+
+</body>
+</html>
