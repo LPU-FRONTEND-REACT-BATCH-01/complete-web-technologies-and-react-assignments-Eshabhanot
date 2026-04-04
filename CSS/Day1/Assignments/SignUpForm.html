@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: #fff;
+    }
+
+    .container {
+        background: #ffffff;
+        color: #333;
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .Heading {
+        color: #2a5298;
+        text-align: center;
+    }
+
+    a {
+        color: #1e3c72;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ff4b2b;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+
+    th {
+        background: #2a5298;
+        color: white;
+    }
+
+    .place {
+        color: #1e3c72;
+        font-weight: bold;
+    }
+
+    .topic {
+        color: #28a745;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    fieldset {
+        margin-top: 15px;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+   
+    .gender-group {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .gender-group label {
+        margin-left: 5px;
+    }
+
+    input[type="submit"] {
+        background: #ff4b2b;
+        color: white;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background: #ff1e00;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="Heading">About Page</h1>
+<p>This is the about page for our website.</p>
+
+<h2 class="Heading">Our Location</h2>
+
+<ul>
+    <li>USA
+        <ul>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Los Angeles</a></li>
+            <li><a href="#">Philly</a></li>
+        </ul>
+    </li>
+
+    <li>World
+        <ul>
+            <li><a href="#">Ottawa</a></li>
+            <li><a href="#">Sydney</a></li>
+        </ul>
+    </li>
+</ul>
+
+<table>
+    <tr>
+        <th>Location</th>
+        <th>Topic</th>
+    </tr>
+    <tr>
+        <td class="place">New York</td>
+        <td class="topic">JavaScript & jQuery</td>
+    </tr>
+    <tr>
+        <td class="place">San Francisco</td>
+        <td class="topic">HTML & CSS</td>
+    </tr>
+</table>
+
+<h2 class="Heading">Sign Up!</h2>
+
+<form>
+
+<label>Name:</label>
+<input type="text" required>
+
+<label>Email:</label>
+<input type="email" required>
+
+<label>Select Location:</label>
+<select>
+    <option>-- Select Location --</option>
+    <option>New York</option>
+    <option>Los Angeles</option>
+    <option>San Francisco</option>
+</select>
+
+<fieldset>
+    <legend>Gender</legend>
+
+    
+    <div class="gender-group">
+        <div>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+        </div>
+
+        <div>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label>
+        </div>
+    </div>
+</fieldset>
+
+<label>Experience:</label>
+<textarea placeholder="Tell us about your experience..."></textarea>
+
+<input type="submit" value="Sign Up">
+
+</form>
+
+</div>
+
+</body>
+</html>
