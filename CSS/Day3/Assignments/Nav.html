@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .navBar{
+            display: flex;
+            justify-content: space-between;
+            font-weight: bolder;
+            background-color: black;
+            color:white;
+            height:30px;
+            font-size:20px;
+            padding:20px;
+        }
+        .menu a{
+            text-decoration: none;
+            color:white;
+          
+        }
+        .menu{
+            display: flex;         
+            gap: 25px;             
+        }
+
+        .menu a:hover{
+            color:rgb(203, 148, 148);
+        }
+
+        @media(max-width:456px) {
+            .navBar{
+                flex-direction:column;
+            }
+            .menu{
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <nav class="navBar">
+        <div class="company">Puma</div>
+       <div class="menu">
+        <a href ="#home">Home</a>
+       <a href="#Products">Products</a>
+       <a href ="#About">About</a>
+       <a href="#Contact">Contact</a>
+       </div>
+        
+    </nav>
+</body>
+</html>
