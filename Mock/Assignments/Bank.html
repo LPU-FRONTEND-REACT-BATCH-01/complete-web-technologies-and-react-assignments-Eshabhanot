@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Account System</title>
+</head>
+<body>
+<script>
+
+let account = {
+    balance: 0,
+    transactions: []
+};
+
+
+function deposit(amount){
+    if(amount<0){
+        console.log("Amount must be greater than 0");
+        return;
+
+    }
+    
+    account.balance += amount;
+    console.log("Amount deposited:",amount);
+    account.transactions.push(`Deposited: ${amount}`);
+    
+}
+
+
+function withdraw(amount){
+    if(amount <= 0){
+        console.log("Amount must be greater than 0");
+    }
+    else if(amount > account.balance){
+        console.log("Cannot withdraw more than balance");
+    }
+    else if(amount > 10000){
+        console.log("Max withdrawal 10,000");
+    }
+    else if(account.balance - amount < 500){
+        console.log("Minimum balance ₹500 must be maintained");
+    }
+    else{
+        account.balance -= amount;
+        account.transactions.push(`Withdrawn: ${amount}`);
+    }
+}
+
+function getBalance(){
+    return account.balance;
+}
+
+
+function getTransactions(){
+    for(let i = 0; i < account.transactions.length; i++){
+        console.log(account.transactions[i]);
+    }
+}
+
+
+// deposit(2000);
+// withdraw(500);
+// deposit(1000);
+
+
+// console.log("Transactions: ");
+// getTransactions();
+
+deposit(2000);
+withdraw(2500);
+getTransactions();
+
+deposit(500);
+withdraw(1000);
+getTransactions();
+
+console.log("Balance: " + getBalance());
+
+</script>
+</body>
+</html>
