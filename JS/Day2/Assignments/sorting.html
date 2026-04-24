@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+</head>
+<body>
+   
+    <script>
+
+        let cartData=[
+          {
+            id:1,
+            name:"Watch",
+            price:2999,
+            quantity:2
+          },
+          {
+             
+            id:2,
+            name:"Shoes",
+            price:199,
+            quantity:5
+          
+          },
+          {
+             
+            id:3,
+            name:"Headphones",
+            price:299,
+            quantity:10
+          
+          }
+
+        ];
+
+        
+       
+let sortByName = [...cartData].sort((a, b) => {
+  return a.name.localeCompare(b.name);
+});
+console.log("Sort by Name:", sortByName);
+
+
+let sortByPrice = [...cartData].sort((a, b) => {
+  return a.price - b.price;
+});
+console.log("Sort by Price ascending:", sortByPrice);
+
+
+
+let sortByPriceDesc = [...cartData].sort((a, b) => {
+  return b.price - a.price;
+});
+console.log("Sort by Price descending:", sortByPriceDesc);
+
+
+        
+        let filterByPrice=cartData.filter(prod=>prod.price>2000);
+        console.log(filterByPrice);
+
+    </script>
+    
+</body>
+</html>

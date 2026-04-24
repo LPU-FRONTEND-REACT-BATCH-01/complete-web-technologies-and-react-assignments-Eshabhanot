@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // const user ={
+        //     name:"Esha",
+        //     age:22
+        // };
+        // const copy =structuredClone(user);
+        // console.log(copy);
+   
+
+    //     const user = {
+    //    name: "Esha",
+    //   address: {
+    //     city: "Delhi"
+    //  }
+    //  };
+
+    // const copy = structuredClone(user);
+
+    // copy.address.city = "Mumbai";
+    //  console.log(copy);
+    //  console.log(user.address.city);
+
+// const user = {
+//   name: "Esha",
+//   age: 22
+// };
+
+// const updatedUser = {
+//   ...user,
+//   age: 23
+// };
+
+// console.log(updatedUser);
+// console.log(user)
+
+const user = {
+  name: "Esha",
+  address: {
+    city: "Delhi"
+  }
+};
+
+const copy = { ...user };
+
+copy.address.city = "Mumbai";
+
+console.log(user.address.city); 
+
+    </script>
+    
+</body>
+</html>

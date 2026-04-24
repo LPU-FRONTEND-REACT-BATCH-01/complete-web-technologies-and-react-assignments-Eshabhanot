@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some</title>
+</head>
+<body>
+    <script>
+        let arr=[1,23,63,25,73,5,3];
+        let results= arr.some(ele=>ele==="Apple");
+        console.log(results);
+
+
+        /* Validations */
+        let users =[
+            {
+                id:1,
+                username:"AkramShammi",
+                password:"Akru"
+            },
+            {
+                id:2,
+                username:"Akhil",
+                password:"Anmol"
+            },{
+                id:3,
+                username:"Devanshu",
+                password:"Devanshi"
+            }
+        ];
+
+        let inputData ={
+            username:"Devanshu",
+            password:"Chutki"
+        }
+
+
+        let res = users.some(ele=>ele.username===inputData.username);
+        console.log(res);
+
+
+
+        /* Taking the input from the user*/
+
+        // let user = prompt("Enter the username:");
+        // let pass = prompt("Enter the password");
+        // let valid = users.some(ele=>ele.username===user.username);
+        // console.log(valid);
+           
+
+        /*Find -> if element is present in the array it will return the element  otherwise it will return the undefined */
+        let check = users.find(ele=>ele.username===inputData.username);
+        console.log(check);
+    </script>
+</body>
+</html>

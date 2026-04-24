@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function turnOnStove(){
+        //     setTimeout(()=>{
+        //         console.log("Stove is Ignited");
+        //     },2000)
+        // }
+
+
+        // function placeBowl(){
+        //     setTimeout(()=>{
+        //         console.log("Placed the Bowl");
+        //     },1000)
+        // }
+
+        function pourOil(callback){
+            setTimeout(()=>{
+                console.log("Poured Oil");
+                callback();
+            },3000)
+        }
+
+        function fryOnions(callback){
+            setTimeout(()=>{
+                console.log("Fried Onions");
+                callback();
+            },5000)
+        }
+
+        function addSpices(callback){
+            setTimeout(()=>{
+                console.log("Spices Added");
+                callback();
+            },1000)
+        }
+
+        function addRice(){
+            setTimeout(()=>{
+                console.log("Rice Added");
+            },4000)
+        }
+
+//       pourOil(()=>{
+//     fryOnions(()=>{
+//         addSpices(()=>{
+//             addRice();
+//         })
+//     })
+// })
+
+addSpices(()=>{ 
+    pourOil(()=>{ 
+        fryOnions(()=>{ 
+            addRice();
+         })
+         })
+         })
+
+
+    </script>
+    
+</body>
+</html>

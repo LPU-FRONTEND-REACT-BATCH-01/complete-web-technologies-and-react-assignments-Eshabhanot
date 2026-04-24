@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>React Navbar Clone</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Inter, Arial, sans-serif;
+}
+
+body{
+    background:#1a1f2b;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 30px;
+    background:#1b2430;
+}
+
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.logo{
+    font-size:24px;
+    color:#61dafb;
+}
+
+.version{
+    font-size:14px;
+    color:#8b949e;
+}
+
+
+.search-box{
+    display:flex;
+    align-items: center;
+    background:#2d3748;
+    border:1px solid #3b475a;
+    border-radius:999px;
+    padding:6px 12px;
+    gap:10px;
+    width:420px;
+}
+
+.search-box input{
+    background:transparent;
+    border:none;
+    color:#cbd5e1;
+    flex:1;
+    font-size:14px;
+}
+
+.search-icon{
+    color:#9ca3af;
+    font-size:14px;
+}
+
+.shortcut{
+    background:#1f2937;
+    color:#9ca3af;
+    font-size:12px;
+    padding:2px 6px;
+    border-radius:6px;
+}
+
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#cbd5e1;
+    font-size:14px;
+    font-weight:500;
+}
+
+.menu a:hover{
+    color:white;
+}
+
+
+.icons{
+    display:flex;
+    gap:18px;
+}
+
+.icons i{
+    font-size:18px;
+    color:#cbd5e1;
+}
+
+.icons i:hover{
+    color:white;
+}
+
+
+@media(max-width:900px){
+    .search-box{
+        display:none;
+    }
+}
+
+@media(max-width:768px){
+    .menu{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="left">
+        <div class="logo-section">
+            <div class="logo">⚛</div>
+            <div class="version">v19.2</div>
+        </div>
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search">
+            <span class="shortcut">Ctrl K</span>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="menu">
+            <a href="#">Learn</a>
+            <a href="#">Reference</a>
+            <a href="#">Community</a>
+            <a href="#">Blog</a>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-language"></i>
+            <i class="fa-brands fa-github"></i>
+          
+        </div>
+    </div>
+
+</nav>
+
+</body>
+</html> 
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Table</title>
+</head>
+<body>
+
+<h1><i>Song Table</i></h1> <br><br>
+<table border="2" cellpadding="10" cellspacing="0" style="background-color: gainsboro;">
+    
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Image</th>
+            <th>Audio</th>
+            <th>Video</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Kitab | Haryanvi</td>
+
+            <td>
+                <img src="../Assests/Kitab.jpg"
+                     alt="Kitab"
+                     height="200"
+                     width="200">
+            </td>
+
+            <td>
+                <audio controls muted>
+                    <source src="../Assests/KitabAudio.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+                <br><br>
+                <a href="../Assests/KitabAudio.mp3" download>Download Audio</a>
+            </td>
+
+            <td>
+                <video height="200" width="200" controls muted>
+                    <source src="../Assests/KitabVideo.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+                <br><br>
+                <a href="../Assests/KitabVideo.mp4" download>Download Video</a>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
+
+</body>
+</html>
